@@ -66,7 +66,7 @@ displayFaceBox = (box) => {
 
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
-    fetch("https://safe-savannah-69896-aa8fa06510be.herokuapp.com/imageurl", {
+    fetch("http://localhost:3000/imageurl", {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
@@ -76,7 +76,7 @@ displayFaceBox = (box) => {
       .then(response => response.json())
       .then(response => {
         if (response) {
-          fetch('https://safe-savannah-69896-aa8fa06510be.herokuapp.com/image', {
+          fetch('http://localhost:3000/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
