@@ -76,7 +76,7 @@ displayFaceBox = (box) => {
       .then(response => response.json())
       .then(response => {
         if (response) {
-          fetch('https://smart-brain-api-zgo8.onrender.com/image', {
+          fetch("https://smart-brain-api-zgo8.onrender.com/image", {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
