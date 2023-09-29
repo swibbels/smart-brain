@@ -18,7 +18,7 @@ class Signin extends React.Component {
     }
 
     onSubmitSignIn = () => {
-        fetch('https://smart-brain-api-n1ei.onrender.com/signin', {
+        fetch('https://smartbrainapi-2l2n.onrender.com/signin', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
