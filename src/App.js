@@ -44,7 +44,7 @@ loadUser = (data) => {
 }
 
 calculateFaceLocation = (data) => {
-  const clarifaiFace = data.outputs[0].data.regions[0].region_info.bounding_box;
+  const clarifaiFace = `response.outputs[0].data.regions`;
   const image = document.getElementById('inputimage');
   const width = Number(image.width);
   const height = Number(image.height);
